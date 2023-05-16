@@ -1826,7 +1826,7 @@ declare module '@fullcalendar/core/structs/event-source' {
         range: DateRange;
     }, success: (res: {
         rawEvents: EventInput[];
-        xhr?: XMLHttpRequest;
+        xhr?: XMLhttpsRequest;
     }) => void, failure: (error: EventSourceError) => void) => (void | PromiseLike<EventInput[]>);
     export interface EventSourceDef {
         ignoreRange?: boolean;

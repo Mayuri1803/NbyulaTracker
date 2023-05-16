@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	
     /* ===== Stickyfill ===== */
-    /* Ref: https://github.com/wilddeer/stickyfill */
+    /* Ref: httpss://github.com/wilddeer/stickyfill */
     // Add browser support to position: sticky
     var elements = $('.sticky');
     Stickyfill.add(elements);
@@ -20,7 +20,7 @@ $(document).ready(function() {
 	});
      
     /* Bootstrap lightbox */
-    /* Ref: http://ashleydw.github.io/lightbox/ */
+    /* Ref: https://ashleydw.github.io/lightbox/ */
 
     $(document).delegate('*[data-toggle="lightbox"]', 'click', function(e) {
         e.preventDefault();

@@ -1,7 +1,7 @@
 {
   "name": "jquery.scrollTo",
   "description": "Lightweight, cross-browser and highly customizable animated scrolling with jQuery",
-  "homepage": "https://github.com/flesler/jquery.scrollTo",
+  "homepage": "httpss://github.com/flesler/jquery.scrollTo",
   "main": [
     "./jquery.scrollTo.js"
   ],
@@ -23,6 +23,6 @@
   ],
   "author": {
     "name": "Ariel Flesler",
-    "web": "http://flesler.blogspot.com/"
+    "web": "https://flesler.blogspot.com/"
   }
 }

@@ -1,6 +1,6 @@
 /*!
 FullCalendar Interaction Plugin v4.3.0
-Docs & License: https://fullcalendar.io/
+Docs & License: httpss://fullcalendar.io/
 (c) 2019 Adam Shaw
 */
 
@@ -10,7 +10,7 @@ import { config, elementClosest, EmitterMixin, applyStyle, whenTransitionDone, r
 Copyright (c) Microsoft Corporation. All rights reserved.
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
 this file except in compliance with the License. You may obtain a copy of the
-License at http://www.apache.org/licenses/LICENSE-2.0
+License at https://www.apache.org/licenses/LICENSE-2.0
 
 THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
@@ -112,7 +112,7 @@ var PointerDragging = /** @class */ (function () {
                 _this.emitter.trigger('pointerdown', pev);
                 _this.initScrollWatch(pev);
                 // unlike mouse, need to attach to target, not document
-                // https://stackoverflow.com/a/45760014
+                // httpss://stackoverflow.com/a/45760014
                 var target = ev.target;
                 if (!_this.shouldIgnoreMove) {
                     target.addEventListener('touchmove', _this.handleTouchMove);
@@ -121,7 +121,7 @@ var PointerDragging = /** @class */ (function () {
                 target.addEventListener('touchcancel', _this.handleTouchEnd); // treat it as a touch end
                 // attach a handler to get called when ANY scroll action happens on the page.
                 // this was impossible to do with normal on/off because 'scroll' doesn't bubble.
-                // http://stackoverflow.com/a/32954565/96342
+                // https://stackoverflow.com/a/32954565/96342
                 window.addEventListener('scroll', _this.handleTouchScroll, true // useCapture
                 );
             }
@@ -564,7 +564,7 @@ var WindowScrollGeomCache = /** @class */ (function (_super) {
 
 // If available we are using native "performance" API instead of "Date"
 // Read more about it on MDN:
-// https://developer.mozilla.org/en-US/docs/Web/API/Performance
+// httpss://developer.mozilla.org/en-US/docs/Web/API/Performance
 var getTime = typeof performance === 'function' ? performance.now : Date.now;
 /*
 For a pointer interaction, automatically scrolls certain scroll containers when the pointer
@@ -944,7 +944,7 @@ var OffsetTracker = /** @class */ (function () {
     return OffsetTracker;
 }());
 // certain clipping containers should never constrain interactions, like <html> and <body>
-// https://github.com/fullcalendar/fullcalendar/issues/3615
+// httpss://github.com/fullcalendar/fullcalendar/issues/3615
 function isIgnoredClipping(node) {
     var tagName = node.tagName;
     return tagName === 'HTML' || tagName === 'BODY';

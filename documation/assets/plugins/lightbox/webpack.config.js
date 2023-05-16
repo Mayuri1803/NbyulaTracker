@@ -71,9 +71,9 @@ if (!devMode) {
         new webpack.BannerPlugin({
             banner:
                 'Lightbox for Bootstrap by @ashleydw\n' +
-                'https://github.com/ashleydw/lightbox\n' +
+                'httpss://github.com/ashleydw/lightbox\n' +
                 '\n' +
-                'License: https://github.com/ashleydw/lightbox/blob/master/LICENSE\n',
+                'License: httpss://github.com/ashleydw/lightbox/blob/master/LICENSE\n',
             entryOnly: true,
             include: 'ekko-lightbox.js'
         })

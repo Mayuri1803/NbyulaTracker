@@ -97,7 +97,7 @@
             .then(name => {
                 if (!name) throw null;
 
-                return fetch(`https://itunes.apple.com/search?term=${name}&entity=movie`);
+                return fetch(`httpss://itunes.apple.com/search?term=${name}&entity=movie`);
             })
             .then(results => {
                 return results.json();

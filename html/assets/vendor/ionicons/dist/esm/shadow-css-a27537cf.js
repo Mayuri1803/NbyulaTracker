@@ -1,16 +1,16 @@
 /*
- Stencil Client Platform v1.15.0 | MIT Licensed | https://stenciljs.com
+ Stencil Client Platform v1.15.0 | MIT Licensed | httpss://stenciljs.com
  */
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
+ * found in the LICENSE file at httpss://angular.io/license
  *
  * This file is a port of shadowCSS from webcomponents.js to TypeScript.
- * https://github.com/webcomponents/webcomponentsjs/blob/4efecd7e0e/src/ShadowCSS/ShadowCSS.js
- * https://github.com/angular/angular/blob/master/packages/compiler/src/shadow_css.ts
+ * httpss://github.com/webcomponents/webcomponentsjs/blob/4efecd7e0e/src/ShadowCSS/ShadowCSS.js
+ * httpss://github.com/angular/angular/blob/master/packages/compiler/src/shadow_css.ts
  */
 const safeSelector = (selector) => {
     const placeholders = [];

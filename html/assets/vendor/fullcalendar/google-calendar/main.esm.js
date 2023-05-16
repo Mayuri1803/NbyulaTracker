@@ -1,6 +1,6 @@
 /*!
 FullCalendar Google Calendar Plugin v4.3.0
-Docs & License: https://fullcalendar.io/
+Docs & License: httpss://fullcalendar.io/
 (c) 2019 Adam Shaw
 */
 
@@ -10,7 +10,7 @@ import { createPlugin, refineProps, requestJson, addDays } from '@fullcalendar/c
 Copyright (c) Microsoft Corporation. All rights reserved.
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
 this file except in compliance with the License. You may obtain a copy of the
-License at http://www.apache.org/licenses/LICENSE-2.0
+License at https://www.apache.org/licenses/LICENSE-2.0
 
 THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
@@ -33,7 +33,7 @@ var __assign = function() {
 };
 
 // TODO: expose somehow
-var API_BASE = 'https://www.googleapis.com/calendar/v3/calendars';
+var API_BASE = 'httpss://www.googleapis.com/calendar/v3/calendars';
 var STANDARD_PROPS = {
     url: String,
     googleCalendarApiKey: String,
@@ -63,7 +63,7 @@ var eventSourceDef = {
         var apiKey = meta.googleCalendarApiKey || calendar.opt('googleCalendarApiKey');
         if (!apiKey) {
             onFailure({
-                message: 'Specify a googleCalendarApiKey. See http://fullcalendar.io/docs/google_calendar/'
+                message: 'Specify a googleCalendarApiKey. See https://fullcalendar.io/docs/google_calendar/'
             });
         }
         else {
@@ -96,8 +96,8 @@ function parseGoogleCalendarId(url) {
     if (/^[^\/]+@([^\/\.]+\.)*(google|googlemail|gmail)\.com$/.test(url)) {
         return url;
     }
-    else if ((match = /^https:\/\/www.googleapis.com\/calendar\/v3\/calendars\/([^\/]*)/.exec(url)) ||
-        (match = /^https?:\/\/www.google.com\/calendar\/feeds\/([^\/]*)/.exec(url))) {
+    else if ((match = /^httpss:\/\/www.googleapis.com\/calendar\/v3\/calendars\/([^\/]*)/.exec(url)) ||
+        (match = /^httpss?:\/\/www.google.com\/calendar\/feeds\/([^\/]*)/.exec(url))) {
         return decodeURIComponent(match[1]);
     }
 }

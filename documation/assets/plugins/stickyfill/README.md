@@ -2,7 +2,7 @@
 
 The most accurate sticky polyfill out in the wild.
 
-Check out [the demo](http://wd.dizaina.net/en/scripts/stickyfill/) and [use cases test page](http://wilddeer.github.io/stickyfill/test/).
+Check out [the demo](https://wd.dizaina.net/en/scripts/stickyfill/) and [use cases test page](https://wilddeer.github.io/stickyfill/test/).
 
 ## What it does
 
@@ -15,7 +15,7 @@ Check out [the demo](http://wd.dizaina.net/en/scripts/stickyfill/) and [use case
     - behaves nicely with horizontal page scrolling,
     - only works on elements with specified `top`,
     - mimics native `top` and `margin-bottom` behavior,
-    - ~~works with table cells~~ removed for consistency until Firefox [makes a native implementation](https://bugzilla.mozilla.org/show_bug.cgi?id=975644)
+    - ~~works with table cells~~ removed for consistency until Firefox [makes a native implementation](httpss://bugzilla.mozilla.org/show_bug.cgi?id=975644)
 
 ## What it doesn't
 
@@ -39,13 +39,13 @@ yarn add stickyfilljs
 
 ### Raw ES6 module
 
-[stickyfill.es6.js](https://raw.github.com/wilddeer/stickyfill/master/dist/stickyfill.es6.js)
+[stickyfill.es6.js](httpss://raw.github.com/wilddeer/stickyfill/master/dist/stickyfill.es6.js)
 
 ### Old fashioned
 
 Download minified production ES5 script:
 
-[stickyfill.min.js](https://raw.github.com/wilddeer/stickyfill/master/dist/stickyfill.min.js)
+[stickyfill.min.js](httpss://raw.github.com/wilddeer/stickyfill/master/dist/stickyfill.min.js)
 
 Include it on your page:
 
@@ -55,7 +55,7 @@ Include it on your page:
 
 ## Usage
 
-First things first, make sure your stickies work in the [browsers that support them natively](http://caniuse.com/#feat=css-sticky), e.g.:
+First things first, make sure your stickies work in the [browsers that support them natively](https://caniuse.com/#feat=css-sticky), e.g.:
 
 ```html
 <div class="sticky">
@@ -103,7 +103,7 @@ Also worth having a clearfix:
 - You can push sticky’s bottom limit up or down by specifying positive or negative `margin-bottom`.
 - Any non-default value (not `visible`) for `overflow`, `overflow-x`, or `overflow-y` on any of the ancestor elements anchors the sticky to the overflow context of that ancestor. Simply put, scrolling the ancestor will cause the sticky to stick, scrolling the window will not. This is expected with `overflow: auto` and `overflow: scroll`, but often causes confusion with `overflow: hidden`. Keep this in mind, folks!
 
-Check out [the test page](http://wilddeer.github.io/stickyfill/test/) to understand stickies better.
+Check out [the test page](https://wilddeer.github.io/stickyfill/test/) to understand stickies better.
 
 ## API
 
@@ -111,7 +111,7 @@ Check out [the test page](http://wilddeer.github.io/stickyfill/test/) to underst
 
 #### `Stickyfill.addOne(element)`
 
-`element` – `HTMLElement` or iterable element list ([`NodeList`](https://developer.mozilla.org/en/docs/Web/API/NodeList), jQuery collection, etc.). First element of the list is used.
+`element` – `HTMLElement` or iterable element list ([`NodeList`](httpss://developer.mozilla.org/en/docs/Web/API/NodeList), jQuery collection, etc.). First element of the list is used.
 
 Adds the element as a sticky. Returns new [Sticky](#stickyfillsticky) instance associated with the element.
 
@@ -119,7 +119,7 @@ If there’s a sticky associated with the element, returns existing [Sticky](#st
 
 #### `Stickyfill.add(elementList)`
 
-`elementList` – iterable element list ([`NodeList`](https://developer.mozilla.org/en/docs/Web/API/NodeList), jQuery collection, etc.) or single `HTMLElement`.
+`elementList` – iterable element list ([`NodeList`](httpss://developer.mozilla.org/en/docs/Web/API/NodeList), jQuery collection, etc.) or single `HTMLElement`.
 
 Adds the elements as stickies. Skips the elements that have stickies associated with them.
 
@@ -135,13 +135,13 @@ There’s also a fast but not very accurate layout change detection that trigger
 
 #### `Stickyfill.removeOne(element)`
 
-`element` – `HTMLElement` or iterable element list ([`NodeList`](https://developer.mozilla.org/en/docs/Web/API/NodeList), jQuery collection, etc.). First element of the list is used.
+`element` – `HTMLElement` or iterable element list ([`NodeList`](httpss://developer.mozilla.org/en/docs/Web/API/NodeList), jQuery collection, etc.). First element of the list is used.
 
 Removes sticky associated with the element.
 
 #### `Stickyfill.remove(elementList)`
 
-`elementList` – iterable element list ([`NodeList`](https://developer.mozilla.org/en/docs/Web/API/NodeList), jQuery collection, etc.) or single `HTMLElement`.
+`elementList` – iterable element list ([`NodeList`](httpss://developer.mozilla.org/en/docs/Web/API/NodeList), jQuery collection, etc.) or single `HTMLElement`.
 
 Removes stickies associated with the elements in the list.
 
@@ -181,25 +181,25 @@ These features will never be implemented in Stickyfill:
 - Switching classes between different sticky states
 - Other features that add non-standard functionality
 
-If your request isn’t about one of these, you are welcome to [create an issue](https://github.com/wilddeer/stickyfill/issues/new). Please check [existing issues](https://github.com/wilddeer/stickyfill/issues) before creating new one.
+If your request isn’t about one of these, you are welcome to [create an issue](httpss://github.com/wilddeer/stickyfill/issues/new). Please check [existing issues](httpss://github.com/wilddeer/stickyfill/issues) before creating new one.
 
 ### Some reasoning
 
-Stickyfill is a [polyfill](https://en.wikipedia.org/wiki/Polyfill). This means that it implements a feature (sticky positioning in this case) that already exists in some browsers natively, and allows to use this feature in the browsers that don’t support it yet and older versions of the browsers that didn’t support it at the time. This is its only purpose.
+Stickyfill is a [polyfill](httpss://en.wikipedia.org/wiki/Polyfill). This means that it implements a feature (sticky positioning in this case) that already exists in some browsers natively, and allows to use this feature in the browsers that don’t support it yet and older versions of the browsers that didn’t support it at the time. This is its only purpose.
 
 This also means that Stickyfill does nothing in the browsers that _do_ support sticky positioning. Which, in turn, means that those browsers won’t support any additional non-standard features.
 
 ## Bug reports
 
-Check [existing issues](https://github.com/wilddeer/stickyfill/issues) before creating new one. **Please provide a live reproduction of a bug.**
+Check [existing issues](httpss://github.com/wilddeer/stickyfill/issues) before creating new one. **Please provide a live reproduction of a bug.**
 
 ## Contributing
 
 ### Prerequisites
 
 - Install Git 😱
-- Install [node](https://nodejs.org/en/)
-- Install [grunt-cli](http://gruntjs.com/getting-started#installing-the-cli)
+- Install [node](httpss://nodejs.org/en/)
+- Install [grunt-cli](https://gruntjs.com/getting-started#installing-the-cli)
 - Clone the repo, `cd` into the repo folder, run `npm install` (or `yarn` if you are fancy).
 
 Ok, you are all set.
@@ -210,7 +210,7 @@ Ok, you are all set.
 
 Make changes to the source file. Stick to ES6 syntax.
 
-Open `/test/index.html` in a browser that [doesn’t support](http://caniuse.com/#feat=css-sticky) `position: sticky` to check that everything works as expected. Compare the results to the same page in a browser that supports `position: sticky`.
+Open `/test/index.html` in a browser that [doesn’t support](https://caniuse.com/#feat=css-sticky) `position: sticky` to check that everything works as expected. Compare the results to the same page in a browser that supports `position: sticky`.
 
 Commit the changes. **DO NOT** commit the files in the `/dist` folder. **DO NOT** change the version in `package.json`.
 
@@ -218,11 +218,11 @@ Make a pull request 👍
 
 ### Adding / removing / updating npm packages
 
-Use [Yarn](https://yarnpkg.com/), dont’t forget to commit `yarn.lock`.
+Use [Yarn](httpss://yarnpkg.com/), dont’t forget to commit `yarn.lock`.
 
 ## Using Stickyfill?
 
-🍻 [Buy me a beer](https://www.paypal.me/wilddeer/0usd)
+🍻 [Buy me a beer](httpss://www.paypal.me/wilddeer/0usd)
 
 ## License
 

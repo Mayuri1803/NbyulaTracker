@@ -10,9 +10,9 @@ export function applyPolyfills() {
 
     function checkIfURLIsSupported() {
       try {
-        var u = new URL('b', 'http://a');
+        var u = new URL('b', 'https://a');
         u.pathname = 'c%20d';
-        return (u.href === 'http://a/c%20d') && u.searchParams;
+        return (u.href === 'https://a/c%20d') && u.searchParams;
       } catch (e) {
         return false;
       }

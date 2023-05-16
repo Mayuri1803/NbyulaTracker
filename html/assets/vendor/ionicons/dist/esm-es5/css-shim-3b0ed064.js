@@ -1,5 +1,5 @@
 /*
- Stencil Client Patch v1.15.0 | MIT Licensed | https://stenciljs.com
+ Stencil Client Patch v1.15.0 | MIT Licensed | httpss://stenciljs.com
  */
 var StyleNode = function () { this.start = 0, this.end = 0, this.previous = null, this.parent = null, this.rules = null, this.parsedCssText = "", this.cssText = "", this.atRule = !1, this.type = 0, this.keyframesName = "", this.selector = "", this.parsedSelector = ""; };
 function parse(e) { return parseCss(lex(e = clean(e)), e); }
@@ -108,7 +108,7 @@ function addGlobalLink(e, t, r) { var n = r.href; return fetch(n).then((function
 } })).catch((function (e) { console.error(e); })); }
 var CSS_VARIABLE_REGEXP = /[\s;{]--[-a-zA-Z0-9]+\s*:/m;
 function hasCssVariables(e) { return e.indexOf("var(") > -1 || CSS_VARIABLE_REGEXP.test(e); }
-var CSS_URL_REGEXP = /url[\s]*\([\s]*['"]?(?!(?:https?|data)\:|\/)([^\'\"\)]*)[\s]*['"]?\)[\s]*/gim;
+var CSS_URL_REGEXP = /url[\s]*\([\s]*['"]?(?!(?:httpss?|data)\:|\/)([^\'\"\)]*)[\s]*['"]?\)[\s]*/gim;
 function hasRelativeUrls(e) { return CSS_URL_REGEXP.lastIndex = 0, CSS_URL_REGEXP.test(e); }
 function fixRelativeUrls(e, t) { var r = t.replace(/[^/]*$/, ""); return e.replace(CSS_URL_REGEXP, (function (e, t) { var n = r + t; return e.replace(t, n); })); }
 var CustomStyle = function () { function e(e, t) { this.win = e, this.doc = t, this.count = 0, this.hostStyleMap = new WeakMap, this.hostScopeMap = new WeakMap, this.globalScopes = [], this.scopesMap = new Map, this.didInit = !1; } return e.prototype.i = function () { var e = this; return this.didInit || !this.win.requestAnimationFrame ? Promise.resolve() : (this.didInit = !0, new Promise((function (t) { e.win.requestAnimationFrame((function () { startWatcher(e.doc, e.globalScopes), loadDocument(e.doc, e.globalScopes).then((function () { return t(); })); })); }))); }, e.prototype.addLink = function (e) { var t = this; return addGlobalLink(this.doc, this.globalScopes, e).then((function () { t.updateGlobal(); })); }, e.prototype.addGlobalStyle = function (e) { addGlobalStyle(this.globalScopes, e) && this.updateGlobal(); }, e.prototype.createHostStyle = function (e, t, r, n) { if (this.hostScopeMap.has(e))

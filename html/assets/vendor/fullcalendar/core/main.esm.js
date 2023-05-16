@@ -1,6 +1,6 @@
 /*!
 FullCalendar Core Package v4.3.1
-Docs & License: https://fullcalendar.io/
+Docs & License: httpss://fullcalendar.io/
 (c) 2019 Adam Shaw
 */
 
@@ -98,7 +98,7 @@ function removeElement(el) {
 }
 // Querying
 // ----------------------------------------------------------------------------------------------------------------
-// from https://developer.mozilla.org/en-US/docs/Web/API/Element/closest
+// from httpss://developer.mozilla.org/en-US/docs/Web/API/Element/closest
 var matchesMethod = Element.prototype.matches ||
     Element.prototype.matchesSelector ||
     Element.prototype.msMatchesSelector;
@@ -999,7 +999,7 @@ function firstDefined() {
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the
 // leading edge, instead of the trailing.
-// https://github.com/jashkenas/underscore/blob/1.6.0/underscore.js#L714
+// httpss://github.com/jashkenas/underscore/blob/1.6.0/underscore.js#L714
 function debounce(func, wait) {
     var timeout;
     var args;
@@ -1128,7 +1128,7 @@ function diffDates(date0, date1, dateEnv, largeUnit) {
 Copyright (c) Microsoft Corporation. All rights reserved.
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
 this file except in compliance with the License. You may obtain a copy of the
-License at http://www.apache.org/licenses/LICENSE-2.0
+License at https://www.apache.org/licenses/LICENSE-2.0
 
 THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
@@ -4242,7 +4242,7 @@ function requestJson(method, url, params, successCallback, failureCallback) {
     else {
         body = encodeParams(params);
     }
-    var xhr = new XMLHttpRequest();
+    var xhr = new XMLhttpsRequest();
     xhr.open(method, url, true);
     if (method !== 'GET') {
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');

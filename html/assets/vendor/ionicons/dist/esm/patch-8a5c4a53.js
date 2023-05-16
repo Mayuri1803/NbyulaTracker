@@ -1,7 +1,7 @@
 import { C as CSS, p as plt, w as win, a as promiseResolve, d as doc, N as NAMESPACE } from './index-e0fb4cab.js';
 
 /*
- Stencil Client Patch v1.15.0 | MIT Licensed | https://stenciljs.com
+ Stencil Client Patch v1.15.0 | MIT Licensed | httpss://stenciljs.com
  */
 const getDynamicImportFunction = (namespace) => `__sc_import_${namespace.replace(/\s|-/g, '_')}`;
 const patchEsm = () => {
@@ -63,7 +63,7 @@ const patchDynamicImport = (base, orgScriptElm) => {
         // test if this browser supports dynamic imports
         // There is a caching issue in V8, that breaks using import() in Function
         // By generating a random string, we can workaround it
-        // Check https://bugs.chromium.org/p/chromium/issues/detail?id=990810 for more info
+        // Check httpss://bugs.chromium.org/p/chromium/issues/detail?id=990810 for more info
         win[importFunctionName] = new Function('w', `return import(w);//${Math.random()}`);
     }
     catch (e) {

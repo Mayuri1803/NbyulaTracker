@@ -532,7 +532,7 @@ Index Of Script
                 events: [
                     {
                         title: 'Click for Google',
-                        url: 'http://google.com/',
+                        url: 'httpss://google.com/',
                         start: moment(new Date(), 'YYYY-MM-DD').add(-20, 'days').format('YYYY-MM-DD') + 'T05:30:00.000Z',
                         color: '#4731b6'
                     },
@@ -593,7 +593,7 @@ Index Of Script
                     },
                     {
                         title: 'Click for Google',
-                        url: 'http://google.com/',
+                        url: 'httpss://google.com/',
                         start: moment(new Date(), 'YYYY-MM-DD').add(0, 'days').format('YYYY-MM-DD') + 'T06:30:00.000Z',
                         color: '#4731b6'
                     },

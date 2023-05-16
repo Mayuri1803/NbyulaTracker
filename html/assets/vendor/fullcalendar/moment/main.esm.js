@@ -1,6 +1,6 @@
 /*!
 FullCalendar Moment Plugin v4.3.0
-Docs & License: https://fullcalendar.io/
+Docs & License: httpss://fullcalendar.io/
 (c) 2019 Adam Shaw
 */
 

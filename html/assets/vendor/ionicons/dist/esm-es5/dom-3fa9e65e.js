@@ -1,5 +1,5 @@
 /*
- Stencil Client Patch v1.15.0 | MIT Licensed | https://stenciljs.com
+ Stencil Client Patch v1.15.0 | MIT Licensed | httpss://stenciljs.com
  */
 (function () {
     var aa = new Set("annotation-xml color-profile font-face font-face-src font-face-uri font-face-format font-face-name missing-glyph".split(" "));
@@ -234,7 +234,7 @@
         } b = F.call(this, b); w(a, b); return b; });
         r(Document.prototype, "importNode", function (b, d) { b = ha.call(this, b, !!d); this.__CE_hasRegistry ? A(a, b) : v(a, b); return b; });
         r(Document.prototype, "createElementNS", function (b, d) {
-            if (this.__CE_hasRegistry && (null === b || "http://www.w3.org/1999/xhtml" === b)) {
+            if (this.__CE_hasRegistry && (null === b || "https://www.w3.org/1999/xhtml" === b)) {
                 var c = a.a.get(d);
                 if (c)
                     return new c.constructorFunction;
@@ -426,7 +426,7 @@
     this.path.push(a), a = a.parentNode; this.path.push(c, d); return this.path; }); })(Event.prototype, document, window);
 /*!
 Element.closest and Element.matches
-https://github.com/jonathantneal/closest
+httpss://github.com/jonathantneal/closest
 Creative Commons Zero v1.0 Universal
 */
 (function (a) { "function" !== typeof a.matches && (a.matches = a.msMatchesSelector || a.mozMatchesSelector || a.webkitMatchesSelector || function (a) { a = (this.document || this.ownerDocument).querySelectorAll(a); for (var b = 0; a[b] && a[b] !== this;)

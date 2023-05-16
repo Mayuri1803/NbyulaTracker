@@ -7,14 +7,14 @@
     "polyfill"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/wilddeer/stickyfill",
+  "homepage": "httpss://github.com/wilddeer/stickyfill",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wilddeer/stickyfill.git"
+    "url": "httpss://github.com/wilddeer/stickyfill.git"
   },
   "author": {
     "name": "Oleg Korsunsky",
-    "url": "https://github.com/wilddeer"
+    "url": "httpss://github.com/wilddeer"
   },
   "main": "dist/stickyfill.js",
   "types": "types/index.d.ts",

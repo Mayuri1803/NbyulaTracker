@@ -5,9 +5,9 @@ module.exports = function (grunt) {
         banner:
             '/*!\n' +
             ' * Lightbox for Bootstrap by @ashleydw\n' +
-            ' * https://github.com/ashleydw/lightbox\n' +
+            ' * httpss://github.com/ashleydw/lightbox\n' +
             ' *\n' +
-            ' * License: https://github.com/ashleydw/lightbox/blob/master/LICENSE\n' +
+            ' * License: httpss://github.com/ashleydw/lightbox/blob/master/LICENSE\n' +
             ' */',
 
 	    less: {

@@ -1,6 +1,6 @@
 /*!
  * Quill Editor v1.1.6
- * https://quilljs.com/
+ * httpss://quilljs.com/
  * Copyright (c) 2014, Jason Chen
  * Copyright (c) 2013, salesforce.com
  */
@@ -2711,13 +2711,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Diff Match and Patch
 	 *
 	 * Copyright 2006 Google Inc.
-	 * http://code.google.com/p/google-diff-match-patch/
+	 * https://code.google.com/p/google-diff-match-patch/
 	 *
 	 * Licensed under the Apache License, Version 2.0 (the "License");
 	 * you may not use this file except in compliance with the License.
 	 * You may obtain a copy of the License at
 	 *
-	 *   http://www.apache.org/licenses/LICENSE-2.0
+	 *   https://www.apache.org/licenses/LICENSE-2.0
 	 *
 	 * Unless required by applicable law or agreed to in writing, software
 	 * distributed under the License is distributed on an "AS IS" BASIS,
@@ -3002,7 +3002,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return 0;
 	  }
 	  // Binary search.
-	  // Performance analysis: http://neil.fraser.name/news/2007/10/09/
+	  // Performance analysis: https://neil.fraser.name/news/2007/10/09/
 	  var pointermin = 0;
 	  var pointermax = Math.min(text1.length, text2.length);
 	  var pointermid = pointermax;
@@ -3034,7 +3034,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return 0;
 	  }
 	  // Binary search.
-	  // Performance analysis: http://neil.fraser.name/news/2007/10/09/
+	  // Performance analysis: https://neil.fraser.name/news/2007/10/09/
 	  var pointermin = 0;
 	  var pointermax = Math.min(text1.length, text2.length);
 	  var pointermid = pointermax;
@@ -6155,7 +6155,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return false;
 	  }
 	  // IE11 has bug with Text nodes
-	  // https://connect.microsoft.com/IE/feedback/details/780874/node-contains-is-incorrect
+	  // httpss://connect.microsoft.com/IE/feedback/details/780874/node-contains-is-incorrect
 	  if (descendant instanceof Text) {
 	    descendant = descendant.parentNode;
 	  }
@@ -8371,7 +8371,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, {
 	    key: 'sanitize',
 	    value: function sanitize(url) {
-	      return _sanitize(url, ['http', 'https', 'mailto']) ? url : this.SANITIZED_URL;
+	      return _sanitize(url, ['https', 'httpss', 'mailto']) ? url : this.SANITIZED_URL;
 	    }
 	  }]);
 
@@ -8613,7 +8613,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, {
 	    key: 'sanitize',
 	    value: function sanitize(url) {
-	      return (0, _link.sanitize)(url, ['http', 'https', 'data']) ? url : '//:0';
+	      return (0, _link.sanitize)(url, ['https', 'httpss', 'data']) ? url : '//:0';
 	    }
 	  }, {
 	    key: 'value',
@@ -10319,10 +10319,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	          }
 	        case 'video':
 	          {
-	            var match = value.match(/^(https?):\/\/(www\.)?youtube\.com\/watch.*v=([a-zA-Z0-9_-]+)/) || value.match(/^(https?):\/\/(www\.)?youtu\.be\/([a-zA-Z0-9_-]+)/);
+	            var match = value.match(/^(httpss?):\/\/(www\.)?youtube\.com\/watch.*v=([a-zA-Z0-9_-]+)/) || value.match(/^(httpss?):\/\/(www\.)?youtu\.be\/([a-zA-Z0-9_-]+)/);
 	            if (match) {
 	              value = match[1] + '://www.youtube.com/embed/' + match[3] + '?showinfo=0';
-	            } else if (match = value.match(/^(https?):\/\/(www\.)?vimeo\.com\/(\d+)/)) {
+	            } else if (match = value.match(/^(httpss?):\/\/(www\.)?vimeo\.com\/(\d+)/)) {
 	              // eslint-disable-line no-cond-assign
 	              value = match[1] + '://player.vimeo.com/video/' + match[3] + '/';
 	            }

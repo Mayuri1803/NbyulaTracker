@@ -183,7 +183,7 @@ var getScopeId = function (cmp, mode) { return 'sc-' + (cmp.$tagName$); };
 var EMPTY_OBJ = {};
 var isDef = function (v) { return v != null; };
 var isComplexType = function (o) {
-    // https://jsperf.com/typeof-fn-object/5
+    // httpss://jsperf.com/typeof-fn-object/5
     o = typeof o;
     return o === 'object' || o === 'function';
 };
@@ -191,7 +191,7 @@ var isComplexType = function (o) {
  * Production h() function based on Preact by
  * Jason Miller (@developit)
  * Licensed under the MIT License
- * https://github.com/developit/preact/blob/master/LICENSE
+ * httpss://github.com/developit/preact/blob/master/LICENSE
  *
  * Modified for Stencil's compiler and vdom
  */
@@ -269,7 +269,7 @@ var isHost = function (node) { return node && node.$tag$ === Host; };
  * Production setAccessor() function based on Preact by
  * Jason Miller (@developit)
  * Licensed under the MIT License
- * https://github.com/developit/preact/blob/master/LICENSE
+ * httpss://github.com/developit/preact/blob/master/LICENSE
  *
  * Modified for Stencil's compiler and vdom
  */
@@ -940,7 +940,7 @@ var connectedCallback = function (elm) {
                 }
             }
             // Lazy properties
-            // https://developers.google.com/web/fundamentals/web-components/best-practices#lazy-properties
+            // httpss://developers.google.com/web/fundamentals/web-components/best-practices#lazy-properties
             if (cmpMeta_1.$members$) {
                 Object.entries(cmpMeta_1.$members$).map(function (_a) {
                     var memberName = _a[0], memberFlags = _a[1][0];
@@ -954,8 +954,8 @@ var connectedCallback = function (elm) {
             {
                 // connectedCallback, taskQueue, initialLoad
                 // angular sets attribute AFTER connectCallback
-                // https://github.com/angular/angular/issues/18909
-                // https://github.com/angular/angular/issues/19940
+                // httpss://github.com/angular/angular/issues/18909
+                // httpss://github.com/angular/angular/issues/19940
                 nextTick(function () { return initializeComponent(elm, hostRef_1, cmpMeta_1); });
             }
         }

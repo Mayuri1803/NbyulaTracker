@@ -5,15 +5,15 @@
         "browser", "animated", "animation", "jquery",
         "scrolling", "scroll", "links", "anchors"
     ],
-    "homepage": "https://github.com/flesler/jquery.scrollTo",
+    "homepage": "httpss://github.com/flesler/jquery.scrollTo",
     "support": {
-        "issues": "https://github.com/flesler/jquery.scrollTo/issues",
-        "source": "https://github.com/flesler/jquery.scrollTo"
+        "issues": "httpss://github.com/flesler/jquery.scrollTo/issues",
+        "source": "httpss://github.com/flesler/jquery.scrollTo"
     },
     "authors": [
         {
             "name": "Ariel Flesler",
-            "web": "http://flesler.blogspot.com/"
+            "web": "https://flesler.blogspot.com/"
         }
     ],
     "require": {

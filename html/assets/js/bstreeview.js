@@ -5,7 +5,7 @@
  * Copyright 2020
  * License: Apache License 2.0
  *
- * Project: https://github.com/chniter/bstreeview
+ * Project: httpss://github.com/chniter/bstreeview
  */
 ; (function ($, window, document, undefined) {
     "use strict";

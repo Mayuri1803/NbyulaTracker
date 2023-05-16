@@ -12,7 +12,7 @@ const Lightbox = (($) => {
 		wrapping: true, //if true, gallery loops infinitely
 		type: null, //force the lightbox into image / youtube mode. if null, or not image|youtube|vimeo; detect it
 		alwaysShowClose: false, //always show the close button, even if there is no title
-		loadingMessage: '<div class="ekko-lightbox-loader"><div><div></div><div></div></div></div>', // http://tobiasahlin.com/spinkit/
+		loadingMessage: '<div class="ekko-lightbox-loader"><div><div></div><div></div></div></div>', // https://tobiasahlin.com/spinkit/
 		leftArrow: '<span>&#10094;</span>',
 		rightArrow: '<span>&#10095;</span>',
 		strings: {
@@ -496,8 +496,8 @@ const Lightbox = (($) => {
 				return true;
 
 			if (typeof match[2] === "string" && match[2].length > 0 && match[2].replace(new RegExp(`:(${{
-					"http:": 80,
-					"https:": 443
+					"https:": 80,
+					"httpss:": 443
 				}[location.protocol]})?$`), "") !== location.host)
 				return true;
 
